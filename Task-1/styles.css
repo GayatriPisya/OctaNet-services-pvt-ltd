@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.69); 
+    backdrop-filter: blur(10px); 
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000;
+    top: 0; 
+    display: flex;
+    align-items: center;
+    padding: 0; 
+    border-bottom: 1px solid #7fc5e3c8;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .logo-icon {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 750px;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px; 
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #1D242B;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-around;
+    margin-left: auto;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #029eff;
+    text-shadow: 0 0 10px #0077C0;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+div {
+    padding: 20px;
+}
+
+div#about {
+    margin-top: 0px;
+    background: linear-gradient(to bottom right, rgba(48, 147, 218, 0.732), rgba(127, 64, 221, 0.649)), url('about.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: #65dbf9a8;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px; 
+}
+
+div#about h2 {
+    margin-bottom: 20px;
+    color: rgb(14, 205, 227);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(0, 0, 0, 0.6);
+    font-size: 1.8em;
+}
+
+div#about h1 {
+    margin-bottom: 40px; 
+    color: black;
+    font-size: 2.5em;
+}
+
+div#about p {
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+}
+
+.services-button:hover {
+    background-color: #005990cb;
+    box-shadow: 0 0 10px rgb(0, 0, 0); 
+}
+
+div#internship {
+    margin-top: 20;
+    background: linear-gradient(to bottom right,  rgba(103, 187, 248, 0.585), rgba(147, 88, 237, 0.536)),url('3631375.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div#internship .internship-item {
+    width: 30%;
+    height: 460px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+}
+
+div#internship .internship-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3),0 0 30px 10px rgba(3, 122, 182, 0.91) ;
+}
+
+div#internship .internship-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.apply-button {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #0cd0e5bf;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s; 
+}
+
+.apply-button:hover {
+    background-color: #005A90;
+}
+
+div#certificates{
+    margin-top: 0px;
+    background: linear-gradient(to bottom right, rgba(69, 157, 219, 0.626), rgba(76, 25, 151, 0.752)), url('certificate.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.search-bar input[type="text"] {
+    padding: 15px;
+    width: 80%; 
+    border: 2px solid #000000;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1.3em;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.search-bar button[type="submit"] {
+    padding: 15px 30px; 
+    background-color: #29c665a7;
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #13d61d;
+}
+
+#certificates p {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #cfedff;
+    line-height: 1.5;
+}
+
+#certificates h2 {
+    margin-bottom: 50px; 
+    color: black;
+    font-size: 2.5em;
+}
+#certificates h1 {
+margin-bottom: 20px;
+color: rgb(14, 205, 227);
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), /* White glow */
+0 0 20px rgba(0, 0, 0, 0.6);
+font-size: 1.8em;
+}
+
+#certificates img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+div#contact{
+    margin-top: 0px;
+    background: linear-gradient(to bottom right, rgba(28, 45, 60, 0.775), rgba(93, 31, 186, 0.767)), url('contact.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+#contact h2 {
+    font-size: 2em;
+}
+.contact-info {
+    width: 50%;
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+.contact-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #4e81df; 
+    font-size: 1.3em;
+}
+.contact-form button {
+    padding: 10px 20px;
+    align-self: center;
+    background-color: #65dbf9a8;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-form button:hover {
+    background-color: #0974b7cb;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.email-icon {
+    margin-right: 10px;
+}
+
+.address-icon {
+    margin-right: 10px;
+}
+
+.phone-icon {
+    margin-right: 10px;
+}
+
+.about-icon {
+    color: #e37e68;
+}
+
+.internship-icon {
+    color: #001bc7; 
+}
+
+.certificates-icon {
+    color: #bfc210; 
+}
+
+.contact-icon {
+    color: #31a90c; 
+}
+
+.linkedin-icon {
+    color: #2182b7; 
+}
+
+.github-icon {
+    color: #030202; 
+}
+
+.twitter-icon {
+    color: #0065a3;
+}
+
+
+.linkedin-icon,
+.github-icon,
+.twitter-icon {
+    transition: text-shadow 0.3s;
+}
+
+.linkedin-icon:hover,
+.github-icon:hover,
+.twitter-icon:hover {
+    color: #ffffff; 
+    text-shadow: 0 0 10px #0077b5;
+}
+
+.contact-info a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 2em; 
+    margin-right: 10px; 
+}
+
+.contact-info a:hover {
+    color: #0d00ffcb; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.69); 
+    backdrop-filter: blur(10px); 
+    top: 0; 
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
